@@ -1,31 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    android:orientation="vertical"
-    android:padding="20dp"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context="id.co.dev.rabbaanii.combobox.mainActivity">
 
     <CheckBox
-        android:text="Meat"
         android:id="@+id/checkbox_meat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCheckboxClicked"/>
+        android:onClick="onCheckboxClicked"
+        android:text="Meat"
+        tools:ignore="HardcodedText" />
 
     <CheckBox
-        android:text="Cheese"
         android:id="@+id/checkbox_cheese"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onCheckboxClicked"/>
+        android:onClick="onCheckboxClicked"
+        android:text="Cheese"
+        tools:ignore="HardcodedText" />
 
-    <TextView
-        android:text="load.."
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pilih"/>
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/piliha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=" + "
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/pilihb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
 
 </LinearLayout>
